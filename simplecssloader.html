@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="simplecssloader.css">
+</head>
+<body onload="myfun()">
+    <button onclick="next()" style="display: none;" id="Lastedit">Continue<br>&RightArrow;</button>
+    <div style="display:none;" id="after">
+        <h1 align="center">Hello,World/Hello,Welcome<br><br><br><br>😛 😜 😝<br>ငါနောက်ထပ်မရေးထားဘူ:ဟ<br>#The End.</h1>
+    </div>
+    <div id="before">
+    <div class="circle"></div>
+    <h1>UNKNOWN_EXCEPTION<br><span>(CTF)</span></h1>
+    </div>
+    <script>
+        var myVar;
+        function myfun()
+        {
+            myVar=setTimeout(showPage,3000);
+        }
+        function showPage()
+        {
+            document.getElementById('before').style.display="none";
+            document.getElementById('Lastedit').style.display="block";
+        }
+        function next()
+        {
+            document.getElementById('Lastedit').style.display="none";
+            document.getElementById('after').style.display="block";
+        }
+    </script>
+</body>
+</html>

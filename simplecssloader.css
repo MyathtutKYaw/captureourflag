@@ -1,0 +1,77 @@
+body
+{
+    margin: 0px;
+    padding: 0px;
+    background-color: black;
+}
+.circle
+{
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 50%;
+    border-top:5px solid green;
+    /* border-bottom: 1px solid green; */
+    color: white;
+    animation: animate 1s infinite linear;
+}
+h1,button
+{
+    color: white;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+span
+{
+    position: absolute;
+    top: 200%;
+    left: 70%;
+    transform: translate(-10%,-70%);
+}
+#Lastedit
+{
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 50%;
+    border:3px solid green;
+    background-color: rgb(13, 51, 33);
+    font-size: 30px;
+    cursor: pointer;
+    outline: none;
+}
+@keyframes animate
+{
+    0%
+    {
+        transform: translate(-50%,-50%) rotate(0deg);
+    }
+    100%
+    {
+        transform: translate(-50%,-50%) rotate(360deg);
+    }
+}
+@media only screen and (max-width:600px)
+{
+    #after h1
+    {
+        font-size: 20px;
+    }
+    #before h1
+    {
+        font-size: 25px;
+    }
+    button
+    {
+        font-size: 20px;
+    }
+}
